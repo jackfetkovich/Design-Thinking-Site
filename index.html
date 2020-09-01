@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Thinking Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+  <div class="container landing-page">
+    <h1>Design Thinking</h1>
+    <h3>An Interactive Guide</h3>
+    <button class="btn btn-big" id="start">Get Started</button>
+  </div>
+
+  <div class="container problem">
+    <h1>Do you have a problem that you are trying to solve?</h1>
+    <button class="btn btn-small" id="yes-problem">Yes</button>
+    <button class="btn btn-small" id="no-problem">No</button>
+  </div>
+
+  <div class="container problem-help help">
+    <h1>Don't Worry!</h1>
+    <p>Try to put yourself in someone else’s shoes. Think about a problem they face, that you could solve. This can be absolutely anything!</p>
+    <button class="btn btn-large help" id="problem-help-done-btn" >Okay, I've got it!</button>
+  </div>
+
+  <div class="container explain-problem text">
+    <h1>Great, tell me about it!</h1>
+    <textarea id="problem-explanation" cols="30" rows="10"></textarea>
+    <button class="btn btn-big" id="done-problem">Done</button>
+  </div>
+
+  <div class="container prototype">
+    <h1>Do you have an idea for a prototype?</h1>
+    <button class="btn btn-small" id="yes-prototype">Yes</button>
+    <button class="btn btn-small" id="no-prototype">No</button>
+  </div>
+
+  <div class="container prototype-help help">
+    <h1>Not a problem!</h1>
+    <p>Consider your problem. Brainstorm some ways that you can fix it. Don’t bother filtering at this stage, just get all of your ideas in one place.</p>
+    <p>If you’re stuck, consider asking someone else for help. Design thinking is a collaborative process!</p>
+    <button class="btn btn-large help" id="prototype-help-done-btn"></button>
+  </div>
+
+  <div class="container explain-prototype text">
+    <h1>Awesome, explain it to me!</h1>
+    <textarea id="prototype-explanation" cols="30" rows="10"></textarea>
+    <button class="btn btn-big" id="done-prototype"></button>
+  </div>
+
+  <div class="container testing">
+    <h1>Have you tested your prototype?</h1>
+    <button class="btn btn-small" id="yes-test">Yes</button>
+    <button class="btn btn-small" id="no-test">No</button>
+  </div>
+
+  <div class="container prototype-help help">
+    <h1>It's go time!</h1>
+    <p>Now that you have a working prototype, it’s time for you to test it! Find people who experience the problem that you are trying to solve, and ask them for feedback on your prototype.</p>
+    <p>Take notes on their feedback, you will use it to improve your prototype later!</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
