@@ -69,7 +69,7 @@ const addButtonEventListeners = function() {
   });
 
   probHelpDoneBtn.addEventListener('click', () => {
-    switchOut(problemPage, explainProblemPage);
+    switchOut(problemHelpPage, explainProblemPage);
   });
 
   noProbBtn.addEventListener('click', () => {
