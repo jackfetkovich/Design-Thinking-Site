@@ -165,7 +165,7 @@ textarea {
 
 
 
-
+/* Make container bigger and landing page font smaller */
 @media (max-width: 700px) {
   .container {
     min-width: 95%;
@@ -173,7 +173,16 @@ textarea {
   .landing-page .main-title h1 {
     font-size: 4rem;
   }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .btn-small {
+    width: 70%;
+  }
 }
+
 
 
 
