@@ -1,8 +1,11 @@
 //Page selection
-let landingPage = document.querySelector('.landing-page');
+const landingPage = document.querySelector('.landing-page');
 const problemPage = document.querySelector('.problem');
 const problemHelpPage = document.querySelector('.problem-help');
 const explainProblemPage = document.querySelector('.explain-problem');
+const ideaPage = document.querySelector('.idea');
+const ideaHelpPage = document.querySelector('.idea-help');
+const explainIdeaPage = document.querySelector('.explain-idea');
 const prototypePage = document.querySelector('.prototype');
 const prototypeHelpPage = document.querySelector('.prototype-help');
 const explainPrototypePage = document.querySelector('.explain-prototype');
@@ -10,7 +13,7 @@ const testingPage = document.querySelector('.testing');
 const testingHelpPage = document.querySelector('.testing-help');
 
 //Putting all pages on one array for easy iteration later
-const pageList = [landingPage, problemPage, problemHelpPage,explainProblemPage, prototypePage, prototypeHelpPage, explainPrototypePage, testingPage, testingHelpPage];
+const pageList = [landingPage, problemPage, problemHelpPage,explainProblemPage,ideaPage, ideaHelpPage, explainIdeaPage, prototypePage, prototypeHelpPage, explainPrototypePage, testingPage, testingHelpPage];
 
 //button selection
 const startBtn = document.querySelector('#start'),  
@@ -18,16 +21,21 @@ const startBtn = document.querySelector('#start'),
       noProbBtn = document.querySelector('#no-problem'), 
       probHelpDoneBtn = document.querySelector('#problem-help-done-btn'),
       doneProbBtn = document.querySelector('#done-problem'),
+      yesIdeaBtn = document.querySelector('#yes-idea'),
+      noIdeaBtn = document.querySelector('#no-idea'),
+      ideaHelpDoneBtn = document.querySelector('#idea-help-done-btn'),
       yesProtBtn = document.querySelector('#yes-prototype'),
       noProtBtn = document.querySelector('#no-prototype');
 
 //Text Area Selection
 const probExplainBox = document.querySelector('#problem-explanation');
+const ideaExplanBox = document.querySelector('#idea-explanation');
 const protExplainBox = document.querySelector("#prototype-explanation");
 // const testExplainBox = document.querySelector('#test')
 
 //Instance Variables for User Input
 let problemExplanation;
+let ideaExplanation;
 let prototypeExplanation;
 let testingExplanation;
 
@@ -79,7 +87,19 @@ const addButtonEventListeners = function() {
   doneProbBtn.addEventListener('click', () => {
     problemExplanation = probExplainBox.value;
     console.log(problemExplanation);
-    switchOut(explainProblemPage, prototypePage);
+    switchOut(explainProblemPage, ideaPage);
+  });
+
+  yesIdeaBtn.addEventListener('click', () => {
+    switchOut(ideaPage, explainIdeaPage);
+  });
+
+  ideaHelpDoneBtn.addEventListener('click', () => {
+    switchOut(ideaHelpPage, explainIdeaPage);
+  });
+
+  noIdeaBtn.addEventListener('click', () => {
+    switchOut(ideaPage, ideaHelpPage);
   });
 }
 

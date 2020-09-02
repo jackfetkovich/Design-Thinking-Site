@@ -181,6 +181,16 @@ textarea {
   .btn-small {
     width: 70%;
   }
+
+  
+
+  .text textarea {
+    width: 95%;
+  }
+
+  .text .btn-big {
+    width: 95%;
+  }
 }
 
 
@@ -191,4 +201,5 @@ textarea {
   body {
     overflow-y: hidden;
   }
+
 }

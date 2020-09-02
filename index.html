@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <!-- LANDING PAGE -->
   <div class="container landing-page">
     <div class="main-title">
       <h1>Design Thinking</h1>
@@ -16,7 +16,9 @@
     </div>
     <button class="btn btn-big" id="start">Get Started</button>
   </div>
+  <!-- END LANDING PAGE -->
 
+  <!-- PROBLEM SECTION -->
   <div class="container problem display-none question">
     <h1>Do you have a problem that you are trying to solve?</h1>
     <button class="btn btn-small yes" id="yes-problem">Yes</button>
@@ -34,7 +36,29 @@
     <textarea id="problem-explanation" cols="20" rows="10" required></textarea>
     <button class="btn btn-big" id="done-problem">Done</button>
   </div>
+  <!-- END PROBLEM SECTION -->
+  
+  <!-- IDEA SECTION -->
+  <div class="container idea display-none question">
+    <h1>Do you have an idea that could solve this problem?</h1>
+    <button class="btn btn-small yes" id="yes-idea">Yes</button>
+    <button class="btn btn-small no" id="no-idea">No</button>
+  </div>
 
+  <div class="container idea-help help display-none">
+    <h1>That's okay!</h1>
+    <p>Take some time and think about how this problem could be solved. If you're stuck, a good rule of thumb is to ask: what is standing in the way of people getting what they want? Then, find a way to remove that obstacle.</p>
+    <button class="btn btn-large help" id="idea-help-done-btn" >Okay, I've got it!</button>
+  </div>
+
+  <div class="container explain-idea text display-none">
+    <h1>Cool! What is it?</h1>
+    <textarea id="idea-explanation" cols="20" rows="10" required></textarea>
+    <button class="btn btn-big" id="done-idea">Done</button>
+  </div>
+  <!-- END IDEA SECTION -->
+
+  <!-- PROTOTYPE SECTION -->
   <div class="container prototype display-none question">
     <h1>Do you have an idea for a prototype?</h1>
     <button class="btn btn-small" id="yes-prototype">Yes</button>
@@ -43,7 +67,7 @@
 
   <div class="container prototype-help help display-none">
     <h1>Not a problem!</h1>
-    <p>Consider your problem. Brainstorm some ways that you can fix it. Don’t bother filtering at this stage, just get all of your ideas in one place.</p>
+    <p>When you thought of your idea, you thought about the obstacles that were standing in the way of people getting what they want. Now, think about how you can actually make that happen.</p>
     <p>If you’re stuck, consider asking someone else for help. Design thinking is a collaborative process!</p>
     <button class="btn btn-big help" id="prototype-help-done-btn"></button>
   </div>
@@ -53,7 +77,9 @@
     <textarea id="prototype-explanation" cols="30" rows="10" required></textarea>
     <button class="btn btn-big" id="done-prototype"></button>
   </div>
+  <!-- END PROTOTYPE SECTION -->
 
+  <!-- TESTING SECTION -->
   <div class="container testing display-none question">
     <h1>Have you tested your prototype?</h1>
     <button class="btn btn-small" id="yes-test">Yes</button>
@@ -65,6 +91,10 @@
     <p>Now that you have a working prototype, it’s time for you to test it! Find people who experience the problem that you are trying to solve, and ask them for feedback on your prototype.</p>
     <p>Take notes on their feedback, you will use it to improve your prototype later!</p>
   </div>
+
+
+
+  <!-- END TESTING SECTION -->
 
 
 
