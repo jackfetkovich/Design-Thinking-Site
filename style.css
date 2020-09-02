@@ -50,7 +50,7 @@ textarea {
 }
 
 .btn-big {
-  width: 500px;
+  width: 80%;
 }
 
 .btn-small {
@@ -58,7 +58,7 @@ textarea {
 }
 
 .btn.help {
-  min-width: 600px;
+  /* min-width: 600px; */
 }
 
 .btn.yes {
@@ -165,6 +165,19 @@ textarea {
 
 
 
+
+@media (max-width: 700px) {
+  .container {
+    min-width: 95%;
+  }
+  .landing-page .main-title h1 {
+    font-size: 4rem;
+  }
+}
+
+
+
+/* Preventing Scrolling */
 @media (min-width: 1000px) {
   body {
     overflow-y: hidden;
