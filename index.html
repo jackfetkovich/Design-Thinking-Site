@@ -69,13 +69,13 @@
     <h1>Not a problem!</h1>
     <p>When you thought of your idea, you thought about the obstacles that were standing in the way of people getting what they want. Now, think about how you can actually make that happen.</p>
     <p>If you’re stuck, consider asking someone else for help. Design thinking is a collaborative process!</p>
-    <button class="btn btn-big help" id="prototype-help-done-btn"></button>
+    <button class="btn btn-big help" id="prototype-help-done-btn">Got it</button>
   </div>
 
   <div class="container explain-prototype text display-none">
     <h1>Awesome, explain it to me!</h1>
     <textarea id="prototype-explanation" cols="30" rows="10" required></textarea>
-    <button class="btn btn-big" id="done-prototype"></button>
+    <button class="btn btn-big" id="done-prototype">Done</button>
   </div>
   <!-- END PROTOTYPE SECTION -->
 
@@ -85,25 +85,50 @@
     <button class="btn btn-small" id="yes-test">Yes</button>
     <button class="btn btn-small" id="no-test">No</button>
   </div>
+  
+  <div class="container explain-testing text display-none">
+    <h1>Well done! How did it go?</h1>
+    <textarea id="testing-explanation" cols="30" rows="10" required></textarea>
+    <button class="btn btn-big" id="done-testing">Done</button>
+  </div>
 
   <div class="container testing-help help display-none">
     <h1>It's go time!</h1>
     <p>Now that you have a working prototype, it’s time for you to test it! Find people who experience the problem that you are trying to solve, and ask them for feedback on your prototype.</p>
     <p>Take notes on their feedback, you will use it to improve your prototype later!</p>
+    <button class="btn btn-big help" id="testing-help-done-btn">Got it</button>
   </div>
-
-
 
   <!-- END TESTING SECTION -->
 
+  <div class="container display-none summary">
+    <div class="summary-wrapper">
+      <h1>Design Report</h1>
+      <p>Awesome job making it through to the end. You should now have a working prototype and feedback from your intended users. This is the end of this guide, but this is not the end of the design process! Continue to improve your product so that it better suits the needs of your users!</p>
+      
+      <div class="section">
+        <h2>The Problem</h2>
+        <p id="problem-summary"></p>
+      </div>
 
+      <div class="section">
+        <h2>Your Idea</h2>
+        <p id="idea-summary"></p>
+      </div>
 
+      <div class="section">
+        <h2>Your Prototype</h2>
+        <p id="prototype-summary"></p>
+      </div>
 
+      <div class="section">
+        <h2>Your Testing</h2>
+        <p id="testing-summary"></p>
+      </div>
 
-
-
-
-
+      <button class='btn btn-big' id="restart">Restart</button>
+    </div>
+  </div>
 
   <script src="./app.js"></script>
 </body>

@@ -58,7 +58,7 @@ textarea {
 }
 
 .btn.help {
-  /* min-width: 600px; */
+  padding: 20px;
 }
 
 .btn.yes {
@@ -76,7 +76,7 @@ textarea {
   transition: 0.5s all;
   opacity: 1;
 
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .landing-page {
@@ -131,10 +131,30 @@ textarea {
   padding: 20px;
   font-size: 1.5rem;
   border-radius: 10px;
-
-
 }
 
+
+.summary-wrapper {
+  background-color: #4CEEEE;
+  width: 100%;
+  padding: 20px;
+  border-radius:11px;
+}
+
+.summary-wrapper p {
+  font-size: 1.5rem;
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+
+.summary-wrapper h2 {
+  color: white; 
+  font-size: 2rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+}
 
 
 
@@ -166,7 +186,7 @@ textarea {
 
 
 /* Make container bigger and landing page font smaller */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .container {
     min-width: 95%;
   }
@@ -197,9 +217,9 @@ textarea {
 
 
 /* Preventing Scrolling */
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   body {
     overflow-y: hidden;
   }
 
-}
+} */
