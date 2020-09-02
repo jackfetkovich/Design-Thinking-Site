@@ -17,10 +17,10 @@
     <button class="btn btn-big" id="start">Get Started</button>
   </div>
 
-  <div class="container problem display-none">
+  <div class="container problem display-none question">
     <h1>Do you have a problem that you are trying to solve?</h1>
-    <button class="btn btn-small" id="yes-problem">Yes</button>
-    <button class="btn btn-small" id="no-problem">No</button>
+    <button class="btn btn-small yes" id="yes-problem">Yes</button>
+    <button class="btn btn-small no" id="no-problem">No</button>
   </div>
 
   <div class="container problem-help help display-none">
@@ -31,11 +31,11 @@
 
   <div class="container explain-problem text display-none">
     <h1>Great, tell me about it!</h1>
-    <textarea id="problem-explanation" cols="30" rows="10"></textarea>
+    <textarea id="problem-explanation" cols="20" rows="10" required></textarea>
     <button class="btn btn-big" id="done-problem">Done</button>
   </div>
 
-  <div class="container prototype display-none">
+  <div class="container prototype display-none question">
     <h1>Do you have an idea for a prototype?</h1>
     <button class="btn btn-small" id="yes-prototype">Yes</button>
     <button class="btn btn-small" id="no-prototype">No</button>
@@ -45,16 +45,16 @@
     <h1>Not a problem!</h1>
     <p>Consider your problem. Brainstorm some ways that you can fix it. Don’t bother filtering at this stage, just get all of your ideas in one place.</p>
     <p>If you’re stuck, consider asking someone else for help. Design thinking is a collaborative process!</p>
-    <button class="btn btn-large help" id="prototype-help-done-btn"></button>
+    <button class="btn btn-big help" id="prototype-help-done-btn"></button>
   </div>
 
   <div class="container explain-prototype text display-none">
     <h1>Awesome, explain it to me!</h1>
-    <textarea id="prototype-explanation" cols="30" rows="10"></textarea>
+    <textarea id="prototype-explanation" cols="30" rows="10" required></textarea>
     <button class="btn btn-big" id="done-prototype"></button>
   </div>
 
-  <div class="container testing display-none">
+  <div class="container testing display-none question">
     <h1>Have you tested your prototype?</h1>
     <button class="btn btn-small" id="yes-test">Yes</button>
     <button class="btn btn-small" id="no-test">No</button>
