@@ -108,7 +108,6 @@ const checkField = function(ta, page1, page2) {
   if(ta.value === ''){
     
   } else {
-    console.log(ta.value)
     let variable = ta.value;
     ta.value = '';
     switchOut(page1, page2);
